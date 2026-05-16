@@ -275,8 +275,10 @@ import "../styles/global.css";
       </section>
 
       <!-- ============ WORK ============ -->
-      <section id="work" class="py-24 md:py-32 border-t border-rule bg-paper2">
+      <section id="work" class="py-24 md:py-32 border-t border-rule">
         <div class="mx-auto w-full max-w-[1280px] px-6 md:px-10 lg:px-14">
+
+          <!-- Section header -->
           <div class="grid grid-cols-12 gap-x-6 gap-y-10">
             <div class="col-span-12 md:col-span-3">
               <div class="font-mono text-[11px] tracking-[0.18em] uppercase text-muted"
@@ -285,420 +287,392 @@ import "../styles/global.css";
             <div class="col-span-12 md:col-span-9">
               <h2 class="font-display text-3xl md:text-5xl leading-[1.05] tracking-tight max-w-3xl text-ink"
                   data-i18n data-en="Selected work." data-zh="精选作品。">Selected work.</h2>
+              <p class="mt-6 font-display italic font-light text-xl md:text-[24px] leading-[1.4] text-ink2 max-w-[44ch]"
+                 data-i18n
+                 data-en="Five rooms. Different problems, same craft — ask the right question, then show the work."
+                 data-zh="五个场景。不同的问题,同一份手艺——先问对问题,再把过程展示出来。">
+                Five rooms. Different problems, same craft — ask the right question, then show the work.
+              </p>
             </div>
           </div>
 
-          <div class="h-px w-full bg-rule mt-12 mb-12"></div>
+          <div class="mt-14 h-px w-full bg-rule"></div>
 
-          <!-- Case 01 — Excel weekly report -->
-          <article class="py-6">
-            <!-- Header row: meta + title + description + KPIs -->
-            <div class="grid grid-cols-12 gap-x-6 gap-y-6">
-              <div class="col-span-12 md:col-span-3">
-                <div class="font-display text-5xl md:text-6xl text-accent leading-none">01</div>
-                <div class="mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-muted"
-                     data-i18n data-en="Reporting automation" data-zh="报表自动化">Reporting automation</div>
-                <div class="mt-1 font-mono text-[11px] text-ink2"
-                     data-i18n data-en="Internet finance · Weekly cadence" data-zh="互联网金融 · 周报">Internet finance · Weekly cadence</div>
+          <!-- ============================================== -->
+          <!-- 01 · LEAD STORY  — full-bleed landscape image    -->
+          <!-- ============================================== -->
+          <article class="py-16 md:py-24 border-b border-rule">
+            <div class="grid grid-cols-12 gap-x-6 gap-y-6 items-end">
+              <div class="col-span-12 md:col-span-2">
+                <div class="font-display text-[64px] md:text-[88px] leading-[0.85] text-accent">01</div>
               </div>
+              <div class="col-span-12 md:col-span-4">
+                <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                     data-i18n data-en="Reporting automation" data-zh="报表自动化">Reporting automation</div>
+                <div class="mt-1 font-mono text-[10px] tracking-[0.05em] text-ink2"
+                     data-i18n data-en="Internet finance · Weekly cadence" data-zh="互联网金融 · 周度周期">Internet finance · Weekly cadence</div>
+              </div>
+              <div class="col-span-12 md:col-span-6">
+                <h3 class="font-display text-3xl md:text-[44px] lg:text-[52px] leading-[1.02] tracking-tight text-ink"
+                    data-i18n
+                    data-en="Weekly report, automated."
+                    data-zh="周报，全自动。">Weekly report, automated.</h3>
+              </div>
+            </div>
 
-              <div class="col-span-12 md:col-span-9">
-                <h3 class="font-display text-3xl md:text-[40px] leading-[1.1] tracking-tight text-ink max-w-2xl"
-                    data-i18n data-en="Weekly report, automated." data-zh="周报,一键生成。">Weekly report, automated.</h3>
-                <div class="mt-5 space-y-4 text-[15.5px] leading-[1.7] text-ink2 max-w-2xl">
-                  <p data-i18n
-                     data-en="An internet finance business needed a standardized weekly operations report. Before this, business teams stitched it by hand every Monday — slow and error-prone. I designed and built the template end-to-end: Excel advanced functions (SUMIFS, INDEX-MATCH, OFFSET) paired with conditional formatting. Change the date, region, or field name and the whole report refreshes itself, with anomalies highlighted automatically across the core operational dimensions — profit, traffic, cost."
-                     data-zh="金融服务业务需要一份标准化的运营周报。在此之前,业务方每周一手工拼表 — 耗时长、易出错。我从模板设计到自动化实现端到端负责:Excel 高级函数(SUMIFS、INDEX-MATCH、OFFSET)配合条件格式。改日期、战区或字段名,整张报表自动跟随,异常自动高亮,覆盖利润、流量、成本等核心运营维度。">
-                    An internet finance business needed a standardized weekly operations report. Before this, business teams stitched it by hand every Monday — slow and error-prone. I designed and built the template end-to-end: Excel advanced functions (SUMIFS, INDEX-MATCH, OFFSET) paired with conditional formatting. Change the date, region, or field name and the whole report refreshes itself, with anomalies highlighted automatically across the core operational dimensions — profit, traffic, cost.
-                  </p>
-                  <p data-i18n
-                     data-en="What used to be a 3-hour Monday ritual became minutes of self-service. Metric definitions stay unified across weeks; week-over-week comparison is immediate."
-                     data-zh="原本周一手工 3 小时的报表整理,变成分钟级自助。指标口径跨周保持统一,周环比一目了然。">
-                    What used to be a 3-hour Monday ritual became minutes of self-service. Metric definitions stay unified across weeks; week-over-week comparison is immediate.
-                  </p>
-                </div>
-                <dl class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-4 border-t border-rule pt-6 max-w-3xl">
+            <figure class="mt-10 md:mt-14">
+              <div class="w-full overflow-hidden border border-rule bg-paper2">
+                <img src="/work/excel-finance-weekly.png"
+                     alt="Excel weekly operations report — internet finance business"
+                     class="w-full h-auto block" loading="lazy" />
+              </div>
+              <figcaption class="mt-3 flex flex-wrap items-center justify-between gap-2 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
+                <span data-i18n data-en="Fig. 01 — Weekly report dashboard" data-zh="图 01 — 周报看板">Fig. 01 — Weekly report dashboard</span>
+                <span>Excel · 2020</span>
+              </figcaption>
+            </figure>
+
+            <div class="mt-12 grid grid-cols-12 gap-x-6 gap-y-10">
+              <div class="col-span-12 md:col-span-7 space-y-5 text-[16px] md:text-[17px] leading-[1.7] text-ink2">
+                <p class="text-pretty" data-i18n
+                   data-en="An internet finance business needed a standardized weekly operations report. Before this, business teams stitched it by hand every Monday — slow and error-prone. I designed and built the template end-to-end: Excel advanced functions (SUMIFS, INDEX-MATCH, OFFSET) paired with conditional formatting. Change the date, region, or field name and the whole report refreshes itself, with anomalies highlighted automatically across the core operational dimensions — profit, traffic, cost."
+                   data-zh="一家互联网金融公司需要一套标准化的周度运营报告。之前业务团队每周一手工拼接,既慢又易错。我从零搭建了报表模板:Excel 进阶函数(SUMIFS、INDEX-MATCH、OFFSET)配合条件格式。修改日期、地区或字段名,整张报表自动刷新,核心运营维度——利润、流量、成本——的异动自动高亮。">
+                  An internet finance business needed a standardized weekly operations report. Before this, business teams stitched it by hand every Monday — slow and error-prone. I designed and built the template end-to-end: Excel advanced functions (SUMIFS, INDEX-MATCH, OFFSET) paired with conditional formatting. Change the date, region, or field name and the whole report refreshes itself, with anomalies highlighted automatically across the core operational dimensions — profit, traffic, cost.
+                </p>
+                <p class="text-pretty" data-i18n
+                   data-en="What used to be a 3-hour Monday ritual became minutes of self-service. Metric definitions stay unified across weeks; week-over-week comparison is immediate."
+                   data-zh="原本每周一 3 小时的人工拼报,变成了分钟级的自助查询。指标口径周与周之间统一;同比环比即点即得。">
+                  What used to be a 3-hour Monday ritual became minutes of self-service. Metric definitions stay unified across weeks; week-over-week comparison is immediate.
+                </p>
+              </div>
+              <div class="col-span-12 md:col-span-5 md:pl-8 md:border-l border-rule">
+                <dl class="grid grid-cols-2 gap-x-4 gap-y-6">
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
-                        data-i18n data-en="Turnaround" data-zh="出数时间">Turnaround</dt>
-                    <dd class="font-display tnum text-[22px] md:text-[26px] leading-tight mt-1 text-ink">3h → mins</dd>
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                        data-i18n data-en="Turnaround" data-zh="报表耗时">Turnaround</dt>
+                    <dd class="font-display tnum text-[26px] md:text-[28px] leading-tight mt-2 text-ink"
+                        data-i18n data-en="3h → mins" data-zh="3小时 → 分钟">3h → mins</dd>
                   </div>
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
                         data-i18n data-en="Dimensions" data-zh="维度">Dimensions</dt>
-                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink"
+                    <dd class="font-display tnum text-[26px] md:text-[28px] leading-tight mt-2 text-ink"
                         data-i18n data-en="Profit · Flow · Cost" data-zh="利润 · 流量 · 成本">Profit · Flow · Cost</dd>
                   </div>
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
-                        data-i18n data-en="Refresh" data-zh="更新">Refresh</dt>
-                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink"
-                        data-i18n data-en="Self-service" data-zh="自助">Self-service</dd>
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                        data-i18n data-en="Refresh" data-zh="刷新">Refresh</dt>
+                    <dd class="font-display tnum text-[26px] md:text-[28px] leading-tight mt-2 text-ink"
+                        data-i18n data-en="Self-service" data-zh="自助查询">Self-service</dd>
                   </div>
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
-                        data-i18n data-en="Stack" data-zh="技术">Stack</dt>
-                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink">Excel · VBA</dd>
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                        data-i18n data-en="Stack" data-zh="技术栈">Stack</dt>
+                    <dd class="font-display tnum text-[26px] md:text-[28px] leading-tight mt-2 text-ink">Excel · VBA</dd>
                   </div>
                 </dl>
               </div>
             </div>
-
-            <!-- Full-width screenshot -->
-            <figure class="mt-12">
-              <div class="w-full border border-rule overflow-hidden bg-paper">
-                <img
-                  src="/work/excel-finance-weekly.png"
-                  alt="Excel weekly operations report — internet finance business"
-                  width="2000"
-                  height="736"
-                  loading="lazy"
-                  class="w-full h-auto block"
-                />
-              </div>
-              <figcaption class="mt-3 flex items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
-                <span data-i18n
-                      data-en="Fig. 01 — Weekly report dashboard"
-                      data-zh="图 01 — 周报看板">Fig. 01 — Weekly report dashboard</span>
-                <span data-i18n data-en="Built in Excel · 2020" data-zh="Excel 自动化 · 2020">Built in Excel · 2020</span>
-              </figcaption>
-            </figure>
-
           </article>
 
-          <!-- Case 02 — Tableau auction monitoring -->
-          <article class="py-6 mt-16 pt-16 border-t border-rule/60">
-            <div class="grid grid-cols-12 gap-x-6 gap-y-6">
-              <div class="col-span-12 md:col-span-3">
-                <div class="font-display text-5xl md:text-6xl text-accent leading-none">02</div>
-                <div class="mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-muted"
-                     data-i18n data-en="Self-service BI" data-zh="自助 BI">Self-service BI</div>
-                <div class="mt-1 font-mono text-[11px] text-ink2"
-                     data-i18n data-en="Auction platform · Real-time" data-zh="拍卖平台 · 实时">Auction platform · Real-time</div>
-              </div>
-
-              <div class="col-span-12 md:col-span-9">
-                <h3 class="font-display text-3xl md:text-[40px] leading-[1.1] tracking-tight text-ink max-w-2xl"
-                    data-i18n data-en="Auction floor, monitored." data-zh="拍卖业务,实时透视。">Auction floor, monitored.</h3>
-                <p class="mt-5 text-[15.5px] leading-[1.7] text-ink2 max-w-2xl"
-                   data-i18n
+          <!-- ============================================== -->
+          <!-- 02 · SPLIT 50/50  — text-left, square right      -->
+          <!-- ============================================== -->
+          <article class="py-16 md:py-24 border-b border-rule">
+            <div class="grid grid-cols-12 gap-x-6 gap-y-10 items-start">
+              <div class="col-span-12 md:col-span-6">
+                <div class="flex items-baseline gap-4">
+                  <div class="font-display text-[64px] md:text-[88px] leading-[0.85] text-accent">02</div>
+                  <div>
+                    <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                         data-i18n data-en="Self-service BI" data-zh="自助 BI">Self-service BI</div>
+                    <div class="mt-1 font-mono text-[10px] tracking-[0.05em] text-ink2"
+                         data-i18n data-en="Auction platform · Real-time" data-zh="拍卖平台 · 实时监控">Auction platform · Real-time</div>
+                  </div>
+                </div>
+                <h3 class="mt-8 font-display text-3xl md:text-[44px] lg:text-[48px] leading-[1.04] tracking-tight text-ink"
+                    data-i18n data-en="Auction floor, monitored." data-zh="拍卖大盘,实时监控。">Auction floor, monitored.</h3>
+                <p class="mt-6 text-[16px] md:text-[17px] leading-[1.7] text-ink2 text-pretty" data-i18n
                    data-en="For an auction platform whose business teams depended on slow, inconsistent IT data pulls, I designed and built an end-to-end Tableau real-time monitoring dashboard — KPI cards, trend lines, bar charts and bullseye visuals covering daily volume, cancellations, total transaction value, period-over-period comparison, source mix, and Top-N city drill-down — replacing cross-department data requests with self-service BI."
-                   data-zh="为业务方此前依赖 IT 慢响应取数的拍卖平台,从需求收集、数据建模到上线交付端到端搭建 Tableau 实时监控大屏(KPI 卡 + 趋势折线 + 条形 + 标靶图,覆盖今日成交、取消交易、当期总额、环比、来源占比、Top-N 城市下钻),把跨部门取数请求变成业务方自助 BI。">
+                   data-zh="面向一家拍卖平台:业务团队长期依赖 IT 部门慢速、口径不一致的取数流程。我端到端设计并搭建了 Tableau 实时监控看板——指标卡、趋势线、柱图和靶心图覆盖每日成交量、撤单、总交易额、同环比、来源结构、Top-N 城市下钻——把跨部门取数需求替换为自助 BI。">
                   For an auction platform whose business teams depended on slow, inconsistent IT data pulls, I designed and built an end-to-end Tableau real-time monitoring dashboard — KPI cards, trend lines, bar charts and bullseye visuals covering daily volume, cancellations, total transaction value, period-over-period comparison, source mix, and Top-N city drill-down — replacing cross-department data requests with self-service BI.
                 </p>
-                <dl class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-4 border-t border-rule pt-6 max-w-3xl">
+                <dl class="mt-10 grid grid-cols-2 gap-x-4 gap-y-5 border-t border-rule pt-6 max-w-md">
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
-                        data-i18n data-en="Turnaround" data-zh="出数时间">Turnaround</dt>
-                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink"
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                        data-i18n data-en="Turnaround" data-zh="取数模式">Turnaround</dt>
+                    <dd class="font-display tnum text-[24px] md:text-[26px] leading-tight mt-1 text-ink"
                         data-i18n data-en="IT pull → live" data-zh="IT 取数 → 实时">IT pull → live</dd>
                   </div>
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
                         data-i18n data-en="Dimensions" data-zh="维度">Dimensions</dt>
-                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink"
-                        data-i18n data-en="Volume · Mix · Top-N" data-zh="成交 · 来源 · Top-N">Volume · Mix · Top-N</dd>
+                    <dd class="font-display tnum text-[24px] md:text-[26px] leading-tight mt-1 text-ink"
+                        data-i18n data-en="Volume · Mix · Top-N" data-zh="成交量 · 结构 · Top-N">Volume · Mix · Top-N</dd>
                   </div>
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
-                        data-i18n data-en="Refresh" data-zh="更新">Refresh</dt>
-                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink"
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                        data-i18n data-en="Refresh" data-zh="刷新">Refresh</dt>
+                    <dd class="font-display tnum text-[24px] md:text-[26px] leading-tight mt-1 text-ink"
                         data-i18n data-en="Real-time" data-zh="实时">Real-time</dd>
                   </div>
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
-                        data-i18n data-en="Stack" data-zh="技术">Stack</dt>
-                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink">Tableau Server</dd>
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                        data-i18n data-en="Stack" data-zh="技术栈">Stack</dt>
+                    <dd class="font-display tnum text-[24px] md:text-[26px] leading-tight mt-1 text-ink">Tableau Server</dd>
                   </div>
                 </dl>
               </div>
-            </div>
 
-            <!-- Centered screenshot (square, constrained width) -->
-            <figure class="mt-12 max-w-3xl mx-auto">
-              <div class="w-full border border-rule overflow-hidden bg-paper">
-                <img
-                  src="/work/tableau-auction-dashboard.png"
-                  alt="Tableau real-time monitoring dashboard for an auction platform"
-                  width="1200"
-                  height="1200"
-                  loading="lazy"
-                  class="w-full h-auto block"
-                />
-              </div>
-              <figcaption class="mt-3 flex items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
-                <span data-i18n
-                      data-en="Fig. 02 — Real-time monitoring dashboard"
-                      data-zh="图 02 — 实时监控大屏">Fig. 02 — Real-time monitoring dashboard</span>
-                <span data-i18n data-en="Built in Tableau · 2023" data-zh="Tableau 部署 · 2023">Built in Tableau · 2023</span>
-              </figcaption>
-            </figure>
+              <figure class="col-span-12 md:col-span-6 md:pl-4">
+                <div class="aspect-square w-full overflow-hidden border border-rule bg-paper2">
+                  <img src="/work/tableau-auction-dashboard.png"
+                       alt="Tableau real-time monitoring dashboard for an auction platform"
+                       class="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <figcaption class="mt-3 flex flex-wrap items-center justify-between gap-2 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
+                  <span data-i18n data-en="Fig. 02 — Real-time monitoring dashboard" data-zh="图 02 — 实时监控看板">Fig. 02 — Real-time monitoring dashboard</span>
+                  <span>Tableau · 2023</span>
+                </figcaption>
+              </figure>
+            </div>
           </article>
 
-          <!-- Case 03 — PowerBI education suite -->
-          <article class="py-6 mt-16 pt-16 border-t border-rule/60">
-            <div class="grid grid-cols-12 gap-x-6 gap-y-6">
+          <!-- ============================================== -->
+          <!-- 03 · PAIR FEATURE  — header, two portraits below -->
+          <!-- ============================================== -->
+          <article class="py-16 md:py-24 border-b border-rule">
+            <div class="grid grid-cols-12 gap-x-6 gap-y-8">
               <div class="col-span-12 md:col-span-3">
-                <div class="font-display text-5xl md:text-6xl text-accent leading-none">03</div>
-                <div class="mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-muted"
-                     data-i18n data-en="Pipeline + Dashboard" data-zh="数据流水线 + 看板">Pipeline + Dashboard</div>
-                <div class="mt-1 font-mono text-[11px] text-ink2"
-                     data-i18n data-en="Education · Daily revenue" data-zh="教育 · 日度营收">Education · Daily revenue</div>
+                <div class="font-display text-[64px] md:text-[88px] leading-[0.85] text-accent">03</div>
+                <div class="mt-3 font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                     data-i18n data-en="Pipeline + Dashboard" data-zh="清洗管道 + 看板">Pipeline + Dashboard</div>
+                <div class="mt-1 font-mono text-[10px] tracking-[0.05em] text-ink2"
+                     data-i18n data-en="Education · Daily revenue" data-zh="教育 · 日营收">Education · Daily revenue</div>
               </div>
-
               <div class="col-span-12 md:col-span-9">
-                <h3 class="font-display text-3xl md:text-[40px] leading-[1.1] tracking-tight text-ink max-w-2xl"
-                    data-i18n data-en="Pulled, prepped, published." data-zh="取数、清洗、发布。">Pulled, prepped, published.</h3>
-                <div class="mt-5 space-y-4 text-[15.5px] leading-[1.7] text-ink2 max-w-2xl">
-                  <p data-i18n
+                <h3 class="font-display text-3xl md:text-[44px] lg:text-[52px] leading-[1.02] tracking-tight text-ink"
+                    data-i18n data-en="Pulled, prepped, published." data-zh="采集、清洗、发布。">Pulled, prepped, published.</h3>
+                <div class="mt-6 space-y-5 text-[16px] md:text-[17px] leading-[1.7] text-ink2 max-w-[60ch]">
+                  <p class="text-pretty" data-i18n
                      data-en="An education business was stuck on manual report assembly. I designed an automated cleaning pipeline in Tableau Prep Builder — bringing the data-to-table time from hours of manual stitching down to under 30 minutes."
-                     data-zh="教育业务此前依赖手工拼表整理报表。我用 Tableau Prep Builder 设计了一条自动化清洗流水线,把数据整理时间从手工小时级压缩到 30 分钟内。">
+                     data-zh="一家教育公司长期卡在人工报表拼接上。我在 Tableau Prep Builder 中设计了自动化清洗管道,把数据到表的耗时从数小时的人工拼接,压到 30 分钟以内。">
                     An education business was stuck on manual report assembly. I designed an automated cleaning pipeline in Tableau Prep Builder — bringing the data-to-table time from hours of manual stitching down to under 30 minutes.
                   </p>
-                  <p data-i18n
+                  <p class="text-pretty" data-i18n
                      data-en="I surfaced the new capability proactively to leadership; the resulting request was a real-time PowerBI dashboard for monitoring daily revenue and refunds — shipped as a six-view suite covering OverView, Subject Insight, Course Matrix, User Profiles, Sales Analysis, and Core Metrics."
-                     data-zh="我主动向管理层汇报这一交付能力提升;随后承接的需求,是一份实时监控每日营收与退款的 PowerBI 大屏 — 最终交付包含数据总览、学科洞察、产品矩阵、学员画像、销售分析、核心指标六个视图。">
+                     data-zh="我主动把这项能力同步给管理层;由此承接的需求是一套 PowerBI 实时看板,用于监控日营收与退费——以六视图套件交付:OverView、学科洞察、课程矩阵、用户画像、销售分析与核心指标。">
                     I surfaced the new capability proactively to leadership; the resulting request was a real-time PowerBI dashboard for monitoring daily revenue and refunds — shipped as a six-view suite covering OverView, Subject Insight, Course Matrix, User Profiles, Sales Analysis, and Core Metrics.
                   </p>
                 </div>
-                <dl class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-4 border-t border-rule pt-6 max-w-3xl">
-                  <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
-                        data-i18n data-en="Turnaround" data-zh="出数时间">Turnaround</dt>
-                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink"
-                        data-i18n data-en="Hours → 30min" data-zh="小时 → 30分">Hours → 30min</dd>
-                  </div>
-                  <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
-                        data-i18n data-en="Views" data-zh="视图">Views</dt>
-                    <dd class="font-display tnum text-[22px] md:text-[26px] leading-tight mt-1 text-ink">6</dd>
-                  </div>
-                  <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
-                        data-i18n data-en="Refresh" data-zh="更新">Refresh</dt>
-                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink"
-                        data-i18n data-en="Real-time" data-zh="实时">Real-time</dd>
-                  </div>
-                  <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
-                        data-i18n data-en="Stack" data-zh="技术">Stack</dt>
-                    <dd class="font-display tnum text-[16px] md:text-[18px] leading-tight mt-1 text-ink">Prep + PowerBI</dd>
-                  </div>
-                </dl>
               </div>
             </div>
 
-            <!-- Two-page screenshots side-by-side (stacked on mobile) -->
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div class="mt-12 grid grid-cols-2 gap-x-4 md:gap-x-6">
               <figure>
-                <div class="w-full border border-rule overflow-hidden bg-paper">
-                  <img
-                    src="/work/powerbi-education-1.png"
-                    alt="PowerBI dashboard suite — OverView, Subject Insight, Course Matrix"
-                    width="1653"
-                    height="2339"
-                    loading="lazy"
-                    class="w-full h-auto block"
-                  />
+                <div class="aspect-[1653/2339] w-full overflow-hidden border border-rule bg-paper2">
+                  <img src="/work/powerbi-education-1.png"
+                       alt="PowerBI dashboard suite — OverView, Subject Insight, Course Matrix"
+                       class="w-full h-full object-cover" loading="lazy" />
                 </div>
-                <figcaption class="mt-3 flex items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
-                  <span data-i18n
-                        data-en="Fig. 03a — Overview · Subjects · Courses"
-                        data-zh="图 03a — 总览 · 学科 · 产品">Fig. 03a — Overview · Subjects · Courses</span>
-                </figcaption>
+                <figcaption class="mt-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
+                            data-i18n data-en="Fig. 03a — Overview · Subjects · Courses" data-zh="图 03a — 总览 · 学科 · 课程">Fig. 03a — Overview · Subjects · Courses</figcaption>
               </figure>
               <figure>
-                <div class="w-full border border-rule overflow-hidden bg-paper">
-                  <img
-                    src="/work/powerbi-education-2.png"
-                    alt="PowerBI dashboard suite — User Profiles, Sales Analysis, Core Metrics"
-                    width="1653"
-                    height="2339"
-                    loading="lazy"
-                    class="w-full h-auto block"
-                  />
+                <div class="aspect-[1653/2339] w-full overflow-hidden border border-rule bg-paper2">
+                  <img src="/work/powerbi-education-2.png"
+                       alt="PowerBI dashboard suite — User Profiles, Sales Analysis, Core Metrics"
+                       class="w-full h-full object-cover" loading="lazy" />
                 </div>
-                <figcaption class="mt-3 flex items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
-                  <span data-i18n
-                        data-en="Fig. 03b — Profiles · Sales · Metrics"
-                        data-zh="图 03b — 画像 · 销售 · 核心指标">Fig. 03b — Profiles · Sales · Metrics</span>
-                </figcaption>
+                <figcaption class="mt-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
+                            data-i18n data-en="Fig. 03b — Profiles · Sales · Metrics" data-zh="图 03b — 用户 · 销售 · 指标">Fig. 03b — Profiles · Sales · Metrics</figcaption>
               </figure>
             </div>
-            <div class="mt-3 flex justify-end max-w-5xl mx-auto font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
-              <span data-i18n data-en="Built in Tableau Prep + PowerBI · 2021" data-zh="Tableau Prep + PowerBI · 2021">Built in Tableau Prep + PowerBI · 2021</span>
-            </div>
+
+            <dl class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6 border-t border-rule pt-6">
+              <div>
+                <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                    data-i18n data-en="Turnaround" data-zh="报表耗时">Turnaround</dt>
+                <dd class="font-display tnum text-[24px] md:text-[28px] leading-tight mt-1 text-ink"
+                    data-i18n data-en="Hours → 30min" data-zh="数小时 → 30分钟">Hours → 30min</dd>
+              </div>
+              <div>
+                <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                    data-i18n data-en="Views" data-zh="视图数">Views</dt>
+                <dd class="font-display tnum text-[24px] md:text-[28px] leading-tight mt-1 text-ink">6</dd>
+              </div>
+              <div>
+                <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                    data-i18n data-en="Refresh" data-zh="刷新">Refresh</dt>
+                <dd class="font-display tnum text-[24px] md:text-[28px] leading-tight mt-1 text-ink"
+                    data-i18n data-en="Real-time" data-zh="实时">Real-time</dd>
+              </div>
+              <div>
+                <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                    data-i18n data-en="Stack" data-zh="技术栈">Stack</dt>
+                <dd class="font-display tnum text-[24px] md:text-[28px] leading-tight mt-1 text-ink">Prep + PowerBI</dd>
+              </div>
+            </dl>
+            <div class="mt-5 font-mono text-[10px] uppercase tracking-[0.22em] text-muted text-right"
+                 data-i18n data-en="Built in Tableau Prep + PowerBI · 2021" data-zh="Tableau Prep + PowerBI 搭建 · 2021">Built in Tableau Prep + PowerBI · 2021</div>
           </article>
 
-          <!-- Case 04 — FMCG blueberry market research -->
-          <article class="py-6 mt-16 pt-16 border-t border-rule/60">
-            <div class="grid grid-cols-12 gap-x-6 gap-y-6">
-              <div class="col-span-12 md:col-span-3">
-                <div class="font-display text-5xl md:text-6xl text-accent leading-none">04</div>
-                <div class="mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-muted"
-                     data-i18n data-en="Market Research" data-zh="市场研究">Market Research</div>
-                <div class="mt-1 font-mono text-[11px] text-ink2"
-                     data-i18n data-en="FMCG · Brand launch" data-zh="FMCG · 新品上市">FMCG · Brand launch</div>
-              </div>
+          <!-- ============================================== -->
+          <!-- 04 · MIRRORED  — portrait image left, text right -->
+          <!-- ============================================== -->
+          <article class="py-16 md:py-24 border-b border-rule">
+            <div class="grid grid-cols-12 gap-x-6 gap-y-10 items-start">
+              <figure class="col-span-12 md:col-span-5">
+                <div class="aspect-[1656/2339] w-full overflow-hidden border border-rule bg-paper2">
+                  <img src="/work/fmcg-blueberry-report.png"
+                       alt="FMCG market research report cover page — blueberry healthy snack brand launch"
+                       class="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <figcaption class="mt-3 flex flex-wrap items-center justify-between gap-2 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
+                  <span data-i18n data-en="Fig. 04 — Report cover" data-zh="图 04 — 报告封面">Fig. 04 — Report cover</span>
+                  <span data-i18n data-en="Market research · 2024" data-zh="市场研究 · 2024">Market research · 2024</span>
+                </figcaption>
+              </figure>
 
-              <div class="col-span-12 md:col-span-9">
-                <h3 class="font-display text-3xl md:text-[40px] leading-[1.1] tracking-tight text-ink max-w-2xl"
-                    data-i18n data-en="Researched, positioned, launched." data-zh="调研、定位、上线。">Researched, positioned, launched.</h3>
-                <div class="mt-5 space-y-4 text-[15.5px] leading-[1.7] text-ink2 max-w-2xl">
-                  <p data-i18n
+              <div class="col-span-12 md:col-span-7 md:pl-6">
+                <div class="flex items-baseline gap-4">
+                  <div class="font-display text-[64px] md:text-[88px] leading-[0.85] text-accent">04</div>
+                  <div>
+                    <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                         data-i18n data-en="Market Research" data-zh="市场研究">Market Research</div>
+                    <div class="mt-1 font-mono text-[10px] tracking-[0.05em] text-ink2"
+                         data-i18n data-en="FMCG · Brand launch" data-zh="快消 · 新品立项">FMCG · Brand launch</div>
+                  </div>
+                </div>
+                <h3 class="mt-8 font-display text-3xl md:text-[44px] lg:text-[48px] leading-[1.04] tracking-tight text-ink"
+                    data-i18n data-en="Researched, positioned, launched." data-zh="研究、定位、上市。">Researched, positioned, launched.</h3>
+                <div class="mt-6 space-y-5 text-[16px] md:text-[17px] leading-[1.7] text-ink2">
+                  <p class="text-pretty" data-i18n
                      data-en="A client CEO asked the team to open a new brand within the group's category. As the sole analyst, I scoped the dried-fruit landscape — preserved fruit, freeze-dried, and low-temperature dried — benchmarked competitors, and proposed a new SKU: a low-temp dried blueberry with no-additive formula, positioned for digital-eye-strain audiences with three pillars — low-sugar, eye-care via anthocyanin, clean ingredients."
-                     data-zh="甲方品牌 CEO 要在集团相关品类中推出新品牌。作为独立分析师,我从蓝莓干行业格局入手,对比果脯蜜饯、冻干果干、低温烘干三大品类,做竞品对标后提出新品 SKU:低温烘干工艺 + 无添加配方的蓝莓干,为长期用眼人群设计 — 低糖、富含花青素护眼、纯净配料三个核心卖点。">
+                     data-zh="客户 CEO 要求团队在集团现有品类内孵化新品牌。作为唯一分析师,我梳理了果干品类版图——蜜饯、冻干、低温烘干——做了竞品基线分析,并提出新 SKU:低温烘干蓝莓 + 无添加配方,面向数字用眼疲劳人群,定位三支柱——低糖、花青素护眼、纯净配方。">
                     A client CEO asked the team to open a new brand within the group's category. As the sole analyst, I scoped the dried-fruit landscape — preserved fruit, freeze-dried, and low-temperature dried — benchmarked competitors, and proposed a new SKU: a low-temp dried blueberry with no-additive formula, positioned for digital-eye-strain audiences with three pillars — low-sugar, eye-care via anthocyanin, clean ingredients.
                   </p>
-                  <p data-i18n
+                  <p class="text-pretty" data-i18n
                      data-en="Domestic blueberry-snack data was sparse — I triangulated global and domestic dried-fruit research with AI tools (Perplexity, ChatGPT) to fill gaps quickly. The competitive cut converged the brand position to low-sugar / eye-care / no-additive, which the client decision team approved. Post-launch, the SKU ranked #2 on Douyin's blueberry category by February sales volume."
-                     data-zh="国内蓝莓干市场数据稀少,我综合全球与国内蓝莓 / 果脯研报,借助 Perplexity、ChatGPT 等 AI 工具快速补齐信息缺口。竞品分析最终把品牌定位收敛到「低糖 · 护眼 · 无添加」,获得甲方决策层通过。上线后,该 SKU 在抖音商城蓝莓干品类 2 月销售量排名第 2。">
+                     data-zh="国内蓝莓零食数据稀薄——我用 AI 工具(Perplexity、ChatGPT)三角验证海内外果干研究,快速补足缺口。竞品切面收敛出「低糖 / 护眼 / 无添加」的品牌定位,获得客户决策层通过。上市后,该 SKU 在抖音蓝莓品类二月销量排名第二。">
                     Domestic blueberry-snack data was sparse — I triangulated global and domestic dried-fruit research with AI tools (Perplexity, ChatGPT) to fill gaps quickly. The competitive cut converged the brand position to low-sugar / eye-care / no-additive, which the client decision team approved. Post-launch, the SKU ranked #2 on Douyin's blueberry category by February sales volume.
                   </p>
                 </div>
-                <dl class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-4 border-t border-rule pt-6 max-w-3xl">
+                <dl class="mt-10 grid grid-cols-2 gap-x-4 gap-y-5 border-t border-rule pt-6 max-w-lg">
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
                         data-i18n data-en="Result" data-zh="成绩">Result</dt>
-                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink"
-                        data-i18n data-en="#2 Douyin (Feb)" data-zh="抖音 No.2 (2月)">#2 Douyin (Feb)</dd>
+                    <dd class="font-display tnum text-[24px] md:text-[26px] leading-tight mt-1 text-accent"
+                        data-i18n data-en="#2 Douyin (Feb)" data-zh="抖音 Top 2(2月)">#2 Douyin (Feb)</dd>
                   </div>
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
                         data-i18n data-en="Positioning" data-zh="定位">Positioning</dt>
-                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink"
-                        data-i18n data-en="3 pillars" data-zh="3 个卖点">3 pillars</dd>
+                    <dd class="font-display tnum text-[24px] md:text-[26px] leading-tight mt-1 text-ink"
+                        data-i18n data-en="3 pillars" data-zh="三支柱">3 pillars</dd>
                   </div>
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
                         data-i18n data-en="Method" data-zh="方法">Method</dt>
-                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink"
-                        data-i18n data-en="Category benchmark" data-zh="品类对标">Category benchmark</dd>
+                    <dd class="font-display tnum text-[24px] md:text-[26px] leading-tight mt-1 text-ink"
+                        data-i18n data-en="Category benchmark" data-zh="品类基线">Category benchmark</dd>
                   </div>
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
                         data-i18n data-en="Tools" data-zh="工具">Tools</dt>
-                    <dd class="font-display tnum text-[16px] md:text-[18px] leading-tight mt-1 text-ink">Perplexity · ChatGPT</dd>
+                    <dd class="font-display tnum text-[24px] md:text-[26px] leading-tight mt-1 text-ink">Perplexity · ChatGPT</dd>
                   </div>
                 </dl>
-                <a
-                  href="https://my.feishu.cn/docx/AG85ddlnqonjVgxkklKclXjXnEh"
-                  target="_blank"
-                  rel="noopener"
-                  class="arrow-link with-underline inline-flex items-center gap-2 mt-8 font-mono text-[12px] uppercase tracking-[0.22em] text-ink"
-                >
-                  <span data-i18n data-en="Read full report" data-zh="阅读完整报告">Read full report</span>
+                <a href="https://my.feishu.cn/docx/AG85ddlnqonjVgxkklKclXjXnEh"
+                   target="_blank" rel="noopener"
+                   class="arrow-link with-underline inline-flex items-center gap-2 mt-10 font-mono text-[12px] uppercase tracking-[0.22em] text-ink">
+                  <span data-i18n data-en="Read full report" data-zh="查看完整报告">Read full report</span>
                   <span class="arrow">→</span>
                 </a>
               </div>
             </div>
-
-            <!-- Cover page screenshot (portrait, centered) -->
-            <figure class="mt-12 max-w-2xl mx-auto">
-              <div class="w-full border border-rule overflow-hidden bg-paper">
-                <img
-                  src="/work/fmcg-blueberry-report.png"
-                  alt="FMCG market research report cover page — blueberry healthy snack brand launch"
-                  width="1656"
-                  height="2339"
-                  loading="lazy"
-                  class="w-full h-auto block"
-                />
-              </div>
-              <figcaption class="mt-3 flex items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
-                <span data-i18n
-                      data-en="Fig. 04 — Report cover"
-                      data-zh="图 04 — 报告首页">Fig. 04 — Report cover</span>
-                <span data-i18n data-en="Market research · 2024" data-zh="市场研究 · 2024">Market research · 2024</span>
-              </figcaption>
-            </figure>
           </article>
 
-          <!-- Case 05 — KOL campaign retrospective -->
-          <article class="py-6 mt-16 pt-16 border-t border-rule/60">
-            <div class="grid grid-cols-12 gap-x-6 gap-y-6">
-              <div class="col-span-12 md:col-span-3">
-                <div class="font-display text-5xl md:text-6xl text-accent leading-none">05</div>
-                <div class="mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-muted"
-                     data-i18n data-en="Campaign Retrospective" data-zh="种草复盘">Campaign Retrospective</div>
-                <div class="mt-1 font-mono text-[11px] text-ink2"
-                     data-i18n data-en="E-commerce · KOL marketing" data-zh="电商 · 达人投放">E-commerce · KOL marketing</div>
-              </div>
+          <!-- ============================================== -->
+          <!-- 05 · MIRRORS 04  — portrait image left, text right -->
+          <!-- ============================================== -->
+          <article class="py-16 md:py-24">
+            <div class="grid grid-cols-12 gap-x-6 gap-y-10 items-start">
+              <figure class="col-span-12 md:col-span-5">
+                <div class="aspect-[1653/2339] w-full overflow-hidden border border-rule bg-paper2">
+                  <img src="/work/camel-seeding-retro.png"
+                       alt="KOL campaign retrospective report cover — outdoor apparel brand"
+                       class="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <figcaption class="mt-3 flex flex-wrap items-center justify-between gap-2 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
+                  <span data-i18n data-en="Fig. 05 — Report cover" data-zh="图 05 — 报告封面">Fig. 05 — Report cover</span>
+                  <span data-i18n data-en="Campaign retrospective · 2025" data-zh="战役复盘 · 2025">Campaign retrospective · 2025</span>
+                </figcaption>
+              </figure>
 
-              <div class="col-span-12 md:col-span-9">
-                <h3 class="font-display text-3xl md:text-[40px] leading-[1.1] tracking-tight text-ink max-w-2xl"
-                    data-i18n data-en="Last campaign, next playbook." data-zh="上一轮复盘,下一轮打法。">Last campaign, next playbook.</h3>
-                <div class="mt-5 space-y-4 text-[15.5px] leading-[1.7] text-ink2 max-w-2xl">
-                  <p data-i18n
-                     data-en="After one KOL marketing round, the business owner asked for a retrospective — not just conversion numbers, but actionable strategy for the next round. I built it in three layers: a brand-vs-competitor benchmark (effective views, indirect conversion, unit conversion cost, ineffective-seeding rate) that surfaced room to optimize boost structure and seeding efficiency; a dual-indicator KOL framework (unit conversion cost × K-value quadrant + transaction-contribution view) that identified the high-yield core talent pool; and a content layer that tagged top videos (couple interaction, contrast humor, soft waterproof reveals, infectious BGM) and deconstructed structure into replicable patterns — strongest selling point in the first 3 seconds, high-contrast visual memory for the 'free + waterproof' identity, conversion-path shortening via comment guidance and landing page design."
-                     data-zh="一轮种草结束后,业务负责人要做复盘 — 不只看转化结果,要给出下一轮可执行的内容与投放策略。我把工作拆成三层:品牌层做对标(有效观看 / 间接转化 / 单位转化成本 / 无效种草率),识别加热结构与无效种草率的优化空间;达人层用「单位转化成本 × K 值」四象限 + 总成交贡献双视角,圈出高产高效核心达人池;内容层给高效视频打标签(情侣互动、反差搞笑、软性防水展示、魔性 BGM),拆解结构沉淀可复用打法 — 开场 3 秒用最强卖点 + 情绪画面抓注意,高对比 + 高饱和制造「自由 + 防水」视觉记忆,评论引导 + 落地页缩短转化路径。">
-                    After one KOL marketing round, the business owner asked for a retrospective — not just conversion numbers, but actionable strategy for the next round. I built it in three layers: a brand-vs-competitor benchmark (effective views, indirect conversion, unit conversion cost, ineffective-seeding rate) that surfaced room to optimize boost structure and seeding efficiency; a dual-indicator KOL framework (unit conversion cost × K-value quadrant + transaction-contribution view) that identified the high-yield core talent pool; and a content layer that tagged top videos (couple interaction, contrast humor, soft waterproof reveals, infectious BGM) and deconstructed structure into replicable patterns — strongest selling point in the first 3 seconds, high-contrast visual memory for the 'free + waterproof' identity, conversion-path shortening via comment guidance and landing page design.
+              <div class="col-span-12 md:col-span-7 md:pl-6">
+                <div class="flex items-baseline gap-4">
+                  <div class="font-display text-[64px] md:text-[88px] leading-[0.85] text-accent">05</div>
+                  <div>
+                    <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                         data-i18n data-en="Campaign Retrospective" data-zh="战役复盘">Campaign Retrospective</div>
+                    <div class="mt-1 font-mono text-[10px] tracking-[0.05em] text-ink2"
+                         data-i18n data-en="E-commerce · KOL marketing" data-zh="电商 · KOL 营销">E-commerce · KOL marketing</div>
+                  </div>
+                </div>
+                <h3 class="mt-8 font-display text-3xl md:text-[44px] lg:text-[48px] leading-[1.04] tracking-tight text-ink"
+                    data-i18n data-en="Last campaign, next playbook." data-zh="上一轮战役,下一份打法。">Last campaign, next playbook.</h3>
+                <div class="mt-6 space-y-5 text-[16px] md:text-[17px] leading-[1.7] text-ink2">
+                  <p class="text-pretty" data-i18n
+                     data-en="After one KOL marketing round, the business wanted strategy — not just conversion numbers. I built a three-layer retrospective: a brand-vs-competitor benchmark, a dual-indicator KOL tiering framework, and a content-tag layer that deconstructed top videos into replicable patterns."
+                     data-zh="一轮 KOL 营销结束后,业务要的是策略,而不只是转化数字。我做了三层复盘:品牌-竞品基线、双指标达人分层框架,以及内容层标签化——把头部视频解构为可复制的范式。">
+                    After one KOL marketing round, the business wanted strategy — not just conversion numbers. I built a three-layer retrospective: a brand-vs-competitor benchmark, a dual-indicator KOL tiering framework, and a content-tag layer that deconstructed top videos into replicable patterns.
                   </p>
-                  <p data-i18n
-                     data-en="The next-round optimization lifted CTR by ~20% and dropped CAC by ~15%. The three-layer cut became a reusable playbook — brand benchmark, dual-indicator KOL tiering, and content tag + structure deconstruction — applied to every subsequent retrospective."
-                     data-zh="下一轮优化让 CTR 提升约 20%、CAC 下降约 15%。整套三层结构沉淀为可复用方法论 — 品牌对标、达人双指标分层、内容标签 + 结构拆解 — 沿用至后续每一轮复盘。">
-                    The next-round optimization lifted CTR by ~20% and dropped CAC by ~15%. The three-layer cut became a reusable playbook — brand benchmark, dual-indicator KOL tiering, and content tag + structure deconstruction — applied to every subsequent retrospective.
+                  <p class="text-pretty" data-i18n
+                     data-en="The next round lifted CTR by ~20% and dropped CAC by ~15%. The three-layer framework became the team's reusable playbook for every campaign after."
+                     data-zh="下一轮 CTR 提升约 20%,CAC 下降约 15%。这套三层框架成为团队此后每次战役通用的标准打法。">
+                    The next round lifted CTR by ~20% and dropped CAC by ~15%. The three-layer framework became the team's reusable playbook for every campaign after.
                   </p>
                 </div>
-                <dl class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-4 border-t border-rule pt-6 max-w-3xl">
+                <dl class="mt-10 grid grid-cols-2 gap-x-4 gap-y-5 border-t border-rule pt-6 max-w-lg">
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">CTR</dt>
-                    <dd class="font-display tnum text-[22px] md:text-[26px] leading-tight mt-1 text-ink">+20%</dd>
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                        data-i18n data-en="CTR uplift" data-zh="CTR 提升">CTR uplift</dt>
+                    <dd class="font-display tnum text-[24px] md:text-[26px] leading-tight mt-1 text-accent">+20%</dd>
                   </div>
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted">CAC</dt>
-                    <dd class="font-display tnum text-[22px] md:text-[26px] leading-tight mt-1 text-ink">−15%</dd>
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                        data-i18n data-en="CAC drop" data-zh="CAC 下降">CAC drop</dt>
+                    <dd class="font-display tnum text-[24px] md:text-[26px] leading-tight mt-1 text-ink">−15%</dd>
                   </div>
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
-                        data-i18n data-en="Layers" data-zh="分层">Layers</dt>
-                    <dd class="font-display tnum text-[16px] md:text-[18px] leading-tight mt-1 text-ink"
-                        data-i18n data-en="Brand · KOL · Content" data-zh="品牌·达人·内容">Brand · KOL · Content</dd>
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
+                        data-i18n data-en="Layers" data-zh="层次">Layers</dt>
+                    <dd class="font-display tnum text-[24px] md:text-[26px] leading-tight mt-1 text-ink"
+                        data-i18n data-en="Brand · KOL · Content" data-zh="品牌 · KOL · 内容">Brand · KOL · Content</dd>
                   </div>
                   <div>
-                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted"
                         data-i18n data-en="Output" data-zh="产出">Output</dt>
-                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink"
-                        data-i18n data-en="Playbook" data-zh="复用方法论">Playbook</dd>
+                    <dd class="font-display tnum text-[24px] md:text-[26px] leading-tight mt-1 text-ink"
+                        data-i18n data-en="Reusable playbook" data-zh="可复用打法">Reusable playbook</dd>
                   </div>
                 </dl>
-                <a
-                  href="https://kcnuax7dag5g.feishu.cn/docx/JRCMdWR8ro8jLtxsrWucoIV3npf"
-                  target="_blank"
-                  rel="noopener"
-                  class="arrow-link with-underline inline-flex items-center gap-2 mt-8 font-mono text-[12px] uppercase tracking-[0.22em] text-ink"
-                >
-                  <span data-i18n data-en="Read full report" data-zh="阅读完整报告">Read full report</span>
+                <a href="https://kcnuax7dag5g.feishu.cn/docx/JRCMdWR8ro8jLtxsrWucoIV3npf"
+                   target="_blank" rel="noopener"
+                   class="arrow-link with-underline inline-flex items-center gap-2 mt-10 font-mono text-[12px] uppercase tracking-[0.22em] text-ink">
+                  <span data-i18n data-en="Read full report" data-zh="查看完整报告">Read full report</span>
                   <span class="arrow">→</span>
                 </a>
               </div>
             </div>
-
-            <!-- Cover page screenshot -->
-            <figure class="mt-12 max-w-2xl mx-auto">
-              <div class="w-full border border-rule overflow-hidden bg-paper">
-                <img
-                  src="/work/camel-seeding-retro.png"
-                  alt="KOL campaign retrospective report cover — outdoor apparel brand"
-                  width="1653"
-                  height="2339"
-                  loading="lazy"
-                  class="w-full h-auto block"
-                />
-              </div>
-              <figcaption class="mt-3 flex items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
-                <span data-i18n
-                      data-en="Fig. 05 — Report cover"
-                      data-zh="图 05 — 报告首页">Fig. 05 — Report cover</span>
-                <span data-i18n data-en="Campaign retrospective · 2025" data-zh="种草复盘 · 2025">Campaign retrospective · 2025</span>
-              </figcaption>
-            </figure>
           </article>
+
         </div>
       </section>
 
       <!-- ============ CONTACT ============ -->
-      <section id="contact" class="py-24 md:py-32 border-t border-rule">
+      <section id="contact" class="py-24 md:py-32 border-t border-rule bg-paper2">
         <div class="mx-auto w-full max-w-[1280px] px-6 md:px-10 lg:px-14">
           <div class="grid grid-cols-12 gap-x-6 gap-y-10">
             <div class="col-span-12 md:col-span-3">
