@@ -1,0 +1,400 @@
+---
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Tang Yang — Data Analyst. Indicator frameworks, BI dashboards, attribution analysis, consumer insights." />
+    <title>Tang Yang — Data Analyst</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+SC:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="antialiased">
+
+    <!-- ============ HEADER ============ -->
+    <header id="hdr" class="fixed inset-x-0 top-0 z-40 transition-all duration-300 border-b border-transparent">
+      <div class="mx-auto w-full max-w-[1280px] px-6 md:px-10 lg:px-14 flex h-16 items-center justify-between">
+        <a href="#top" class="group flex items-baseline gap-3">
+          <span class="font-display text-[19px] tracking-tight"
+                data-i18n data-en="Tang Yang" data-zh="汤洋">Tang Yang</span>
+          <span class="hidden sm:inline font-mono text-[10px] uppercase tracking-[0.22em] text-muted group-hover:text-ink transition"
+                data-i18n data-en="Data Analyst" data-zh="数据分析师">Data Analyst</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-9 font-mono text-[12px] uppercase tracking-[0.18em] text-ink2">
+          <a class="arrow-link" href="#about"   data-i18n data-en="About"   data-zh="关于">About</a>
+          <a class="arrow-link" href="#contact" data-i18n data-en="Contact" data-zh="联系">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-1 font-mono text-[12px] tracking-[0.14em]">
+          <button id="lang-en" class="px-2 py-1 rounded-sm transition text-ink" aria-pressed="true">EN</button>
+          <span class="text-rule">/</span>
+          <button id="lang-zh" class="px-2 py-1 rounded-sm transition text-muted hover:text-ink" aria-pressed="false">CN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section id="top" class="relative pt-32 md:pt-40 pb-20 md:pb-28 grain">
+        <div class="mx-auto w-full max-w-[1280px] px-6 md:px-10 lg:px-14">
+
+          <div class="flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+            <span data-i18n data-en="Portfolio" data-zh="作品集">Portfolio</span>
+            <span>N 31.2° / E 121.4°</span>
+          </div>
+          <div class="mt-3 h-px w-full bg-rule"></div>
+
+          <div class="mt-10 md:mt-14 grid grid-cols-12 gap-x-6 gap-y-12 items-start">
+
+            <!-- Left: kicker + H1 -->
+            <div class="col-span-12 lg:col-span-8">
+              <div class="font-mono text-[12px] uppercase tracking-[0.22em] text-accent mb-6"
+                   data-i18n
+                   data-en="Data Analyst · Metrics · BI · Insights"
+                   data-zh="数据分析师 · 指标 · BI · 洞察">
+                Data Analyst · Metrics · BI · Insights
+              </div>
+
+              <h1 class="font-display text-[14vw] sm:text-[12vw] md:text-[9.5vw] lg:text-[8.2vw] leading-[0.92] tracking-[-0.025em] text-ink">
+                <span class="block" data-i18n data-en="Numbers narrate." data-zh="数字会说话。">Numbers narrate.</span>
+                <span class="block italic font-light text-ink2"
+                      data-i18n data-en="I write the sentences." data-zh="我把它讲清楚。">I write the sentences.</span>
+              </h1>
+            </div>
+
+            <!-- Right: analyst card -->
+            <aside class="col-span-12 lg:col-span-4 lg:pt-2">
+              <div class="font-mono text-[11px] uppercase tracking-[0.22em] text-muted"
+                   data-i18n data-en="— The analyst" data-zh="— 分析师">— The analyst</div>
+
+              <div class="mt-4 font-display text-3xl md:text-4xl tracking-tight"
+                   data-i18n data-en="Tang Yang" data-zh="汤洋">Tang Yang</div>
+
+              <p class="mt-5 max-w-sm text-[15px] leading-[1.65] text-ink2"
+                 data-i18n
+                 data-en="Three years in. Indicator frameworks, quantitative modeling, attribution and anomaly analysis, BI dashboards."
+                 data-zh="数据分析 3 年。指标体系、量化测算、归因分析、异动分析、BI 看板。">
+                Three years in. Indicator frameworks, quantitative modeling, attribution and anomaly analysis, BI dashboards.
+              </p>
+
+              <div class="mt-6 font-mono text-[11px] uppercase tracking-[0.18em] text-muted"
+                   data-i18n data-en="Based in Shanghai" data-zh="常驻上海">Based in Shanghai</div>
+            </aside>
+          </div>
+
+          <!-- CTAs -->
+          <div class="mt-14 md:mt-20 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            <a href="/Tang_Yang_Data_Analyst.pdf"
+               class="group inline-flex items-center justify-between gap-6 bg-ink text-paper px-6 py-4 hover:bg-accent transition-colors"
+               download>
+              <span class="font-mono text-[12px] uppercase tracking-[0.22em]"
+                    data-i18n data-en="Download résumé" data-zh="下载简历">Download résumé</span>
+              <span class="font-mono text-[14px] transition-transform group-hover:translate-y-0.5">↓</span>
+            </a>
+            <a href="#contact"
+               class="group inline-flex items-center justify-between gap-6 border border-ink/80 px-6 py-4 hover:bg-ink hover:text-paper transition-colors">
+              <span class="font-mono text-[12px] uppercase tracking-[0.22em]"
+                    data-i18n data-en="Get in touch" data-zh="联系我">Get in touch</span>
+              <span class="font-mono text-[14px] transition-transform group-hover:translate-x-1">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section id="about" class="py-24 md:py-32 border-t border-rule">
+        <div class="mx-auto w-full max-w-[1280px] px-6 md:px-10 lg:px-14">
+          <div class="grid grid-cols-12 gap-x-6 gap-y-10">
+
+            <!-- Left: section label + portrait byline -->
+            <div class="col-span-12 md:col-span-3">
+              <div class="font-mono text-[11px] tracking-[0.18em] uppercase text-muted"
+                   data-i18n data-en="01 — About" data-zh="01 — 关于">01 — About</div>
+
+              <figure class="portrait mt-6 max-w-[240px]">
+                <div class="aspect-[3/4] w-full overflow-hidden border border-rule bg-paper2">
+                  <img src="/portrait.jpg" alt="Tang Yang portrait" class="w-full h-full object-cover" />
+                </div>
+                <figcaption class="mt-3 flex items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
+                  <span class="whitespace-nowrap" data-i18n data-en="Fig. — Portrait" data-zh="图 — 肖像">Fig. — Portrait</span>
+                  <span class="whitespace-nowrap">2026</span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <!-- Right: heading + dek + mini stats + byline meta -->
+            <div class="col-span-12 md:col-span-9 flex flex-col">
+              <h2 class="font-display text-3xl md:text-5xl leading-[1.1] tracking-tight max-w-3xl text-ink"
+                  data-i18n
+                  data-en="A short note from the analyst."
+                  data-zh="分析师的一段自述。">A short note from the analyst.</h2>
+
+              <p class="mt-8 font-display italic font-light text-xl md:text-[26px] leading-[1.35] tracking-[-0.005em] text-ink2 max-w-[40ch]"
+                 data-i18n
+                 data-en="Indicators tell you what changed. Methodology tells you why."
+                 data-zh="指标告诉你发生了什么,方法论告诉你为什么。">
+                Indicators tell you what changed. Methodology tells you why.
+              </p>
+
+              <div class="mt-auto pt-16">
+                <div class="h-px w-full bg-rule"></div>
+                <div class="mt-4 grid grid-cols-3 gap-x-6 font-mono text-[10px] uppercase tracking-[0.22em]">
+                  <div>
+                    <div class="text-muted" data-i18n data-en="By" data-zh="作者">By</div>
+                    <div class="mt-1 text-ink" data-i18n data-en="Tang Yang" data-zh="汤洋">Tang Yang</div>
+                  </div>
+                  <div>
+                    <div class="text-muted" data-i18n data-en="From" data-zh="地点">From</div>
+                    <div class="mt-1 text-ink" data-i18n data-en="Shanghai, CN" data-zh="中国 上海">Shanghai, CN</div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-muted" data-i18n data-en="Practicing since" data-zh="入行年份">Practicing since</div>
+                    <div class="mt-1 text-ink">2022</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 mb-12 h-px w-full bg-rule"></div>
+
+          <div class="grid grid-cols-12 gap-x-6 gap-y-12">
+
+            <!-- Bio + Questions -->
+            <div class="col-span-12 md:col-span-7">
+              <div class="space-y-5 text-[16px] md:text-[17px] leading-[1.7] text-ink2">
+                <p class="text-pretty" data-i18n
+                   data-en="I'm a data analyst with three years of experience. My day-to-day work includes designing indicator frameworks, quantitative modeling, attribution and anomaly analysis, and building BI dashboards in Tableau, PowerBI, and FineBI. I've delivered across e-commerce, smart manufacturing, finance, and education."
+                   data-zh="数据分析师 · 3 年经验。日常工作包括指标体系搭建、量化测算、归因分析、异动分析,以及 Tableau / PowerBI / FineBI 的 BI 看板搭建。服务过电商、智能制造、金融、教育等多种业务场景。">
+                  I'm a data analyst with three years of experience. My day-to-day work includes designing indicator frameworks, quantitative modeling, attribution and anomaly analysis, and building BI dashboards in Tableau, PowerBI, and FineBI. I've delivered across e-commerce, smart manufacturing, finance, and education.
+                </p>
+                <p class="text-pretty" data-i18n
+                   data-en="I write before I chart. One clear sentence beats ten clever visuals."
+                   data-zh="动笔之前先想清楚结论。一句干净的话,胜过十张花哨的图。">
+                  I write before I chart. One clear sentence beats ten clever visuals.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Skills + Methods -->
+            <div class="col-span-12 md:col-span-5 md:pl-6 md:border-l border-rule space-y-8">
+              <div>
+                <div class="font-mono text-[11px] uppercase tracking-[0.22em] text-muted mb-3"
+                     data-i18n data-en="Tools" data-zh="工具">Tools</div>
+                <ul class="flex flex-wrap gap-2">
+                  <li class="font-mono text-[12px] px-2.5 py-1.5 border border-rule text-ink hover:border-ink hover:bg-ink hover:text-paper transition-colors cursor-default">SQL</li>
+                  <li class="font-mono text-[12px] px-2.5 py-1.5 border border-rule text-ink hover:border-ink hover:bg-ink hover:text-paper transition-colors cursor-default">Python</li>
+                  <li class="font-mono text-[12px] px-2.5 py-1.5 border border-rule text-ink hover:border-ink hover:bg-ink hover:text-paper transition-colors cursor-default">Tableau</li>
+                  <li class="font-mono text-[12px] px-2.5 py-1.5 border border-rule text-ink hover:border-ink hover:bg-ink hover:text-paper transition-colors cursor-default">Power BI</li>
+                  <li class="font-mono text-[12px] px-2.5 py-1.5 border border-rule text-ink hover:border-ink hover:bg-ink hover:text-paper transition-colors cursor-default">FineBI</li>
+                  <li class="font-mono text-[12px] px-2.5 py-1.5 border border-rule text-ink hover:border-ink hover:bg-ink hover:text-paper transition-colors cursor-default">Excel (VBA)</li>
+                  <li class="font-mono text-[12px] px-2.5 py-1.5 border border-rule text-ink hover:border-ink hover:bg-ink hover:text-paper transition-colors cursor-default">YingDao RPA</li>
+                  <li class="font-mono text-[12px] px-2.5 py-1.5 border border-rule text-ink hover:border-ink hover:bg-ink hover:text-paper transition-colors cursor-default">ChatGPT / Claude</li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="font-mono text-[11px] uppercase tracking-[0.22em] text-muted mb-3"
+                     data-i18n data-en="Methods" data-zh="方法论">Methods</div>
+                <ul class="flex flex-wrap gap-2">
+                  <li class="font-mono text-[12px] px-2.5 py-1.5 border border-rule text-ink hover:border-ink hover:bg-ink hover:text-paper transition-colors cursor-default"
+                      data-i18n data-en="Market Research" data-zh="市场研究">Market Research</li>
+                  <li class="font-mono text-[12px] px-2.5 py-1.5 border border-rule text-ink hover:border-ink hover:bg-ink hover:text-paper transition-colors cursor-default"
+                      data-i18n data-en="Consumer Insights" data-zh="消费者洞察">Consumer Insights</li>
+                  <li class="font-mono text-[12px] px-2.5 py-1.5 border border-rule text-ink hover:border-ink hover:bg-ink hover:text-paper transition-colors cursor-default"
+                      data-i18n data-en="KPI Framework" data-zh="指标体系">KPI Framework</li>
+                  <li class="font-mono text-[12px] px-2.5 py-1.5 border border-rule text-ink hover:border-ink hover:bg-ink hover:text-paper transition-colors cursor-default"
+                      data-i18n data-en="Attribution Analysis" data-zh="归因分析">Attribution Analysis</li>
+                  <li class="font-mono text-[12px] px-2.5 py-1.5 border border-rule text-ink hover:border-ink hover:bg-ink hover:text-paper transition-colors cursor-default"
+                      data-i18n data-en="Anomaly Analysis" data-zh="异动分析">Anomaly Analysis</li>
+                  <li class="font-mono text-[12px] px-2.5 py-1.5 border border-rule text-ink hover:border-ink hover:bg-ink hover:text-paper transition-colors cursor-default"
+                      data-i18n data-en="Quantitative Modeling" data-zh="量化测算">Quantitative Modeling</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="mt-16 mb-6 h-px w-full bg-rule"></div>
+          <div class="font-mono text-[11px] uppercase tracking-[0.18em]">
+            <div class="grid grid-cols-12 gap-x-6 py-3 border-b border-rule/60">
+              <div class="col-span-6 md:col-span-3 text-muted">2024 — 2025</div>
+              <div class="col-span-6 md:col-span-3 text-ink"
+                   data-i18n data-en="Tianlan Technology" data-zh="天蓝色科技">Tianlan Technology</div>
+              <div class="col-span-12 md:col-span-4 mt-2 md:mt-0 text-ink2"
+                   data-i18n data-en="FMCG e-commerce · Data Analyst" data-zh="快消电商 · 数据分析师">FMCG e-commerce · Data Analyst</div>
+              <div class="col-span-12 md:col-span-2 mt-1 md:mt-0 md:text-right text-muted"
+                   data-i18n data-en="Shanghai" data-zh="上海">Shanghai</div>
+            </div>
+            <div class="grid grid-cols-12 gap-x-6 py-3 border-b border-rule/60">
+              <div class="col-span-6 md:col-span-3 text-muted">2022 — 2024</div>
+              <div class="col-span-6 md:col-span-3 text-ink">Huawei</div>
+              <div class="col-span-12 md:col-span-4 mt-2 md:mt-0 text-ink2"
+                   data-i18n data-en="Smart manufacturing · Data Analyst" data-zh="智能制造 · 数据分析师">Smart manufacturing · Data Analyst</div>
+              <div class="col-span-12 md:col-span-2 mt-1 md:mt-0 md:text-right text-muted"
+                   data-i18n data-en="Shanghai" data-zh="上海">Shanghai</div>
+            </div>
+            <div class="grid grid-cols-12 gap-x-6 py-3">
+              <div class="col-span-6 md:col-span-3 text-muted">2016 — 2022</div>
+              <div class="col-span-6 md:col-span-3 text-ink"
+                   data-i18n data-en="Yangtze University" data-zh="长江大学">Yangtze University</div>
+              <div class="col-span-12 md:col-span-4 mt-2 md:mt-0 text-ink2"
+                   data-i18n data-en="B.E. Communications Engineering" data-zh="通信工程学士">B.E. Communications Engineering</div>
+              <div class="col-span-12 md:col-span-2 mt-1 md:mt-0 md:text-right text-muted"
+                   data-i18n data-en="Education" data-zh="教育背景">Education</div>
+            </div>
+          </div>
+
+          <!-- Languages + Industries footnote -->
+          <div class="mt-8 grid grid-cols-12 gap-x-6 gap-y-3 font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+            <div class="col-span-12 md:col-span-3"
+                 data-i18n data-en="Languages" data-zh="语言">Languages</div>
+            <div class="col-span-12 md:col-span-9 text-ink2"
+                 data-i18n data-en="Mandarin (native) · English CET-6"
+                 data-zh="普通话(母语) · 英语 CET-6">Mandarin (native) · English CET-6</div>
+            <div class="col-span-12 md:col-span-3"
+                 data-i18n data-en="Industries" data-zh="行业">Industries</div>
+            <div class="col-span-12 md:col-span-9 text-ink2"
+                 data-i18n
+                 data-en="E-commerce · Smart manufacturing · Finance · Education"
+                 data-zh="电商 · 智能制造 · 金融 · 教育">E-commerce · Smart manufacturing · Finance · Education</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section id="contact" class="py-24 md:py-32 border-t border-rule bg-paper2">
+        <div class="mx-auto w-full max-w-[1280px] px-6 md:px-10 lg:px-14">
+          <div class="grid grid-cols-12 gap-x-6 gap-y-10">
+            <div class="col-span-12 md:col-span-3">
+              <div class="font-mono text-[11px] uppercase tracking-[0.18em] text-muted"
+                   data-i18n data-en="02 — Contact" data-zh="02 — 联系">02 — Contact</div>
+            </div>
+            <div class="col-span-12 md:col-span-9">
+              <h2 class="font-display text-4xl md:text-6xl leading-[1.05] tracking-tight max-w-4xl text-ink"
+                  data-i18n
+                  data-en="Hiring, collaborating, or just curious?"
+                  data-zh="招聘、合作、或者只是好奇?">Hiring, collaborating, or just curious?</h2>
+              <p class="mt-6 text-[16px] md:text-[17px] leading-[1.65] text-ink2 max-w-xl"
+                 data-i18n
+                 data-en="I read every message and reply within two working days."
+                 data-zh="每封信我都会读,两个工作日内回复。">
+                I read every message and reply within two working days.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-14 mb-10 h-px w-full bg-rule"></div>
+
+          <a href="mailto:823138943@qq.com" class="group block">
+            <div class="font-mono text-[11px] uppercase tracking-[0.22em] text-muted mb-3"
+                 data-i18n data-en="Email" data-zh="邮箱">Email</div>
+            <div class="font-display text-[clamp(2rem,7vw,5rem)] tracking-tight text-ink group-hover:text-accent transition-colors break-all">
+              823138943@qq.com
+            </div>
+          </a>
+
+          <div class="mt-12 mb-6 h-px w-full bg-rule"></div>
+
+          <div class="flex flex-col sm:flex-row gap-3 sm:items-center justify-between font-mono text-[11px] uppercase tracking-[0.18em]">
+            <span class="text-muted"
+                  data-i18n
+                  data-en="Shanghai, CN  ·  Open to remote & collaboration"
+                  data-zh="中国 上海  ·  接受远程 / 合作">
+              Shanghai, CN  ·  Open to remote &amp; collaboration
+            </span>
+            <span class="text-ink2"
+                  data-i18n
+                  data-en="Mandarin · English"
+                  data-zh="中文 · English">Mandarin · English</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="py-10 border-t border-rule">
+      <div class="mx-auto w-full max-w-[1280px] px-6 md:px-10 lg:px-14 flex font-mono text-[11px] uppercase tracking-[0.18em] text-muted">
+        <div data-i18n
+             data-en="Personal portfolio · Shanghai"
+             data-zh="个人作品集 · 上海">Personal portfolio · Shanghai</div>
+      </div>
+    </footer>
+
+    <script is:inline>
+      // ---- Lang toggle ----
+      const STORE_KEY = "tangyang.lang";
+      const root = document.documentElement;
+      const btnEn = document.getElementById("lang-en");
+      const btnZh = document.getElementById("lang-zh");
+
+      function applyLang(lang) {
+        const next = lang === "zh" ? "zh" : "en";
+        document.body.classList.add("lang-fading");
+        setTimeout(() => {
+          root.setAttribute("data-lang", next);
+          root.setAttribute("lang", next === "zh" ? "zh-CN" : "en");
+
+          document.querySelectorAll("[data-i18n]").forEach((el) => {
+            const val = next === "zh" ? el.getAttribute("data-zh") : el.getAttribute("data-en");
+            if (val != null) el.textContent = val;
+          });
+
+          btnEn.classList.toggle("text-ink", next === "en");
+          btnEn.classList.toggle("text-muted", next !== "en");
+          btnZh.classList.toggle("text-ink", next === "zh");
+          btnZh.classList.toggle("text-muted", next !== "zh");
+          btnEn.setAttribute("aria-pressed", String(next === "en"));
+          btnZh.setAttribute("aria-pressed", String(next === "zh"));
+          btnEn.classList.toggle("hover:text-ink", next !== "en");
+          btnZh.classList.toggle("hover:text-ink", next !== "zh");
+
+          try { localStorage.setItem(STORE_KEY, next); } catch (e) {}
+          requestAnimationFrame(() => document.body.classList.remove("lang-fading"));
+        }, 140);
+      }
+
+      btnEn.addEventListener("click", () => applyLang("en"));
+      btnZh.addEventListener("click", () => applyLang("zh"));
+
+      // init from localStorage — always hydrate textContent
+      let stored = "en";
+      try { stored = localStorage.getItem(STORE_KEY) || "en"; } catch (e) {}
+      const initLang = stored === "zh" ? "zh" : "en";
+      root.setAttribute("data-lang", initLang);
+      root.setAttribute("lang", initLang === "zh" ? "zh-CN" : "en");
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const val = el.getAttribute(initLang === "zh" ? "data-zh" : "data-en");
+        if (val != null) el.textContent = val;
+      });
+      if (initLang === "zh") {
+        btnEn.classList.replace("text-ink", "text-muted");
+        btnEn.classList.add("hover:text-ink");
+        btnZh.classList.replace("text-muted", "text-ink");
+        btnZh.classList.remove("hover:text-ink");
+        btnEn.setAttribute("aria-pressed", "false");
+        btnZh.setAttribute("aria-pressed", "true");
+      }
+
+      // ---- Sticky header blur on scroll ----
+      const hdr = document.getElementById("hdr");
+      const onScroll = () => {
+        if (window.scrollY > 12) hdr.classList.add("scrolled");
+        else hdr.classList.remove("scrolled");
+      };
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+    </script>
+  </body>
+</html>
