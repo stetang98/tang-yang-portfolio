@@ -305,12 +305,18 @@ import "../styles/global.css";
               <div class="col-span-12 md:col-span-9">
                 <h3 class="font-display text-3xl md:text-[40px] leading-[1.1] tracking-tight text-ink max-w-2xl"
                     data-i18n data-en="Weekly report, automated." data-zh="周报,一键生成。">Weekly report, automated.</h3>
-                <p class="mt-5 text-[15.5px] leading-[1.65] text-ink2 max-w-2xl"
-                   data-i18n
-                   data-en="A weekly operations report for an internet finance business — built in Excel with SUMIFS, INDEX-MATCH, OFFSET, and conditional formatting. Change the date, region, or field name; the entire report refreshes itself, with anomalies highlighted automatically. Turned a 3-hour Monday ritual into minutes of self-service."
-                   data-zh="金融服务业务的运营周报模板,用 Excel 高级函数(SUMIFS / INDEX-MATCH / OFFSET)+ 条件格式构建。改日期、战区或字段名,数据自动跟随,异常自动高亮。把原本周一手工 3 小时的报表整理,变成分钟级自助。">
-                  A weekly operations report for an internet finance business — built in Excel with SUMIFS, INDEX-MATCH, OFFSET, and conditional formatting. Change the date, region, or field name; the entire report refreshes itself, with anomalies highlighted automatically. Turned a 3-hour Monday ritual into minutes of self-service.
-                </p>
+                <div class="mt-5 space-y-4 text-[15.5px] leading-[1.7] text-ink2 max-w-2xl">
+                  <p data-i18n
+                     data-en="An internet finance business needed a standardized weekly operations report. Before this, business teams stitched it by hand every Monday — slow and error-prone. I designed and built the template end-to-end: Excel advanced functions (SUMIFS, INDEX-MATCH, OFFSET) paired with conditional formatting. Change the date, region, or field name and the whole report refreshes itself, with anomalies highlighted automatically across the core operational dimensions — profit, traffic, cost."
+                     data-zh="金融服务业务需要一份标准化的运营周报。在此之前,业务方每周一手工拼表 — 耗时长、易出错。我从模板设计到自动化实现端到端负责:Excel 高级函数(SUMIFS、INDEX-MATCH、OFFSET)配合条件格式。改日期、战区或字段名,整张报表自动跟随,异常自动高亮,覆盖利润、流量、成本等核心运营维度。">
+                    An internet finance business needed a standardized weekly operations report. Before this, business teams stitched it by hand every Monday — slow and error-prone. I designed and built the template end-to-end: Excel advanced functions (SUMIFS, INDEX-MATCH, OFFSET) paired with conditional formatting. Change the date, region, or field name and the whole report refreshes itself, with anomalies highlighted automatically across the core operational dimensions — profit, traffic, cost.
+                  </p>
+                  <p data-i18n
+                     data-en="What used to be a 3-hour Monday ritual became minutes of self-service. Metric definitions stay unified across weeks; week-over-week comparison is immediate."
+                     data-zh="原本周一手工 3 小时的报表整理,变成分钟级自助。指标口径跨周保持统一,周环比一目了然。">
+                    What used to be a 3-hour Monday ritual became minutes of self-service. Metric definitions stay unified across weeks; week-over-week comparison is immediate.
+                  </p>
+                </div>
                 <dl class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-4 border-t border-rule pt-6 max-w-3xl">
                   <div>
                     <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
@@ -358,83 +364,6 @@ import "../styles/global.css";
               </figcaption>
             </figure>
 
-            <!-- Case notes — structured detail -->
-            <div class="mt-14 pt-10 border-t border-rule">
-              <div class="font-mono text-[10px] uppercase tracking-[0.22em] text-muted mb-8"
-                   data-i18n data-en="Case notes" data-zh="案例笔记">Case notes</div>
-
-              <dl class="divide-y divide-rule/60">
-                <!-- Context -->
-                <div class="grid grid-cols-12 gap-x-6 py-5">
-                  <dt class="col-span-12 md:col-span-3 font-mono text-[10px] uppercase tracking-[0.22em] text-muted pt-1"
-                      data-i18n data-en="Context" data-zh="项目背景">Context</dt>
-                  <dd class="col-span-12 md:col-span-9 text-[15px] leading-[1.65] text-ink2 mt-2 md:mt-0"
-                      data-i18n
-                      data-en="The internet finance business lacked a standardized weekly report template across its multi-dimensional operational data — business teams stitched reports by hand, which was slow and error-prone."
-                      data-zh="金融服务业务多维度运营数据缺乏标准化周报模板,业务方手工拼表耗时长、易错。">
-                    The internet finance business lacked a standardized weekly report template across its multi-dimensional operational data — business teams stitched reports by hand, which was slow and error-prone.
-                  </dd>
-                </div>
-
-                <!-- Role -->
-                <div class="grid grid-cols-12 gap-x-6 py-5">
-                  <dt class="col-span-12 md:col-span-3 font-mono text-[10px] uppercase tracking-[0.22em] text-muted pt-1"
-                      data-i18n data-en="Role" data-zh="我的角色">Role</dt>
-                  <dd class="col-span-12 md:col-span-9 text-[15px] leading-[1.65] text-ink2 mt-2 md:mt-0"
-                      data-i18n
-                      data-en="Data analyst — designed and built the weekly report template and its automation end-to-end."
-                      data-zh="数据分析师 — 周报模板设计与自动化实现。">
-                    Data analyst — designed and built the weekly report template and its automation end-to-end.
-                  </dd>
-                </div>
-
-                <!-- Approach -->
-                <div class="grid grid-cols-12 gap-x-6 py-5">
-                  <dt class="col-span-12 md:col-span-3 font-mono text-[10px] uppercase tracking-[0.22em] text-muted pt-1"
-                      data-i18n data-en="Approach" data-zh="关键做法">Approach</dt>
-                  <dd class="col-span-12 md:col-span-9 mt-2 md:mt-0">
-                    <ul class="space-y-2.5 text-[15px] leading-[1.65] text-ink2">
-                      <li class="flex gap-3"><span class="text-accent shrink-0 mt-0.5">·</span><span data-i18n
-                          data-en="Automated reports built on Excel advanced functions (SUMIFS / INDEX-MATCH / OFFSET)."
-                          data-zh="基于 Excel 高级函数(SUMIFS / INDEX-MATCH / OFFSET)实现自动化报表。">Automated reports built on Excel advanced functions (SUMIFS / INDEX-MATCH / OFFSET).</span></li>
-                      <li class="flex gap-3"><span class="text-accent shrink-0 mt-0.5">·</span><span data-i18n
-                          data-en="Change the date, region, or field name; data filters update automatically."
-                          data-zh="通过修改日期、战区或字段名称,数据筛选自动跟随变化。">Change the date, region, or field name; data filters update automatically.</span></li>
-                      <li class="flex gap-3"><span class="text-accent shrink-0 mt-0.5">·</span><span data-i18n
-                          data-en="Covers profit, traffic, and cost — the core operational dimensions."
-                          data-zh="覆盖利润、流量、成本等核心运营维度。">Covers profit, traffic, and cost — the core operational dimensions.</span></li>
-                      <li class="flex gap-3"><span class="text-accent shrink-0 mt-0.5">·</span><span data-i18n
-                          data-en="Conditional formatting highlights anomalies so the business team can spot issues at a glance."
-                          data-zh="配套条件格式高亮异常,业务方一眼定位问题。">Conditional formatting highlights anomalies so the business team can spot issues at a glance.</span></li>
-                    </ul>
-                  </dd>
-                </div>
-
-                <!-- Outcome -->
-                <div class="grid grid-cols-12 gap-x-6 py-5">
-                  <dt class="col-span-12 md:col-span-3 font-mono text-[10px] uppercase tracking-[0.22em] text-muted pt-1"
-                      data-i18n data-en="Outcome" data-zh="业务价值">Outcome</dt>
-                  <dd class="col-span-12 md:col-span-9 text-[15px] leading-[1.65] text-ink2 mt-2 md:mt-0"
-                      data-i18n
-                      data-en="Weekly report turnaround dropped from a 3-hour manual ritual to minutes of self-service. Metric definitions stay unified; week-over-week comparison is immediate."
-                      data-zh="周报出数时间从手工 3 小时缩短至模板自动化分钟级,数据口径统一,跨周对比清晰。">
-                    Weekly report turnaround dropped from a 3-hour manual ritual to minutes of self-service. Metric definitions stay unified; week-over-week comparison is immediate.
-                  </dd>
-                </div>
-
-                <!-- Capabilities -->
-                <div class="grid grid-cols-12 gap-x-6 py-5">
-                  <dt class="col-span-12 md:col-span-3 font-mono text-[10px] uppercase tracking-[0.22em] text-muted pt-1"
-                      data-i18n data-en="Capabilities" data-zh="能力体现">Capabilities</dt>
-                  <dd class="col-span-12 md:col-span-9 font-mono text-[12px] text-ink2 mt-2 md:mt-0"
-                      data-i18n
-                      data-en="Advanced Excel (functions · conditional formatting · automation) · Report templating · Metric governance"
-                      data-zh="Excel 进阶(高级函数 · 条件格式 · 自动化) · 业务周报模板化 · 数据口径治理">
-                    Advanced Excel (functions · conditional formatting · automation) · Report templating · Metric governance
-                  </dd>
-                </div>
-              </dl>
-            </div>
           </article>
         </div>
       </section>
