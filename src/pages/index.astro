@@ -365,6 +365,75 @@ import "../styles/global.css";
             </figure>
 
           </article>
+
+          <!-- Case 02 — Tableau auction monitoring -->
+          <article class="py-6 mt-16 pt-16 border-t border-rule/60">
+            <div class="grid grid-cols-12 gap-x-6 gap-y-6">
+              <div class="col-span-12 md:col-span-3">
+                <div class="font-display text-5xl md:text-6xl text-accent leading-none">02</div>
+                <div class="mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-muted"
+                     data-i18n data-en="Self-service BI" data-zh="自助 BI">Self-service BI</div>
+                <div class="mt-1 font-mono text-[11px] text-ink2"
+                     data-i18n data-en="Auction platform · Real-time" data-zh="拍卖平台 · 实时">Auction platform · Real-time</div>
+              </div>
+
+              <div class="col-span-12 md:col-span-9">
+                <h3 class="font-display text-3xl md:text-[40px] leading-[1.1] tracking-tight text-ink max-w-2xl"
+                    data-i18n data-en="Auction floor, monitored." data-zh="拍卖业务,实时透视。">Auction floor, monitored.</h3>
+                <p class="mt-5 text-[15.5px] leading-[1.7] text-ink2 max-w-2xl"
+                   data-i18n
+                   data-en="For an auction platform whose business teams depended on slow, inconsistent IT data pulls, I designed and built an end-to-end Tableau real-time monitoring dashboard — KPI cards, trend lines, bar charts and bullseye visuals covering daily volume, cancellations, total transaction value, period-over-period comparison, source mix, and Top-N city drill-down — replacing cross-department data requests with self-service BI."
+                   data-zh="为业务方此前依赖 IT 慢响应取数的拍卖平台,从需求收集、数据建模到上线交付端到端搭建 Tableau 实时监控大屏(KPI 卡 + 趋势折线 + 条形 + 标靶图,覆盖今日成交、取消交易、当期总额、环比、来源占比、Top-N 城市下钻),把跨部门取数请求变成业务方自助 BI。">
+                  For an auction platform whose business teams depended on slow, inconsistent IT data pulls, I designed and built an end-to-end Tableau real-time monitoring dashboard — KPI cards, trend lines, bar charts and bullseye visuals covering daily volume, cancellations, total transaction value, period-over-period comparison, source mix, and Top-N city drill-down — replacing cross-department data requests with self-service BI.
+                </p>
+                <dl class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-4 border-t border-rule pt-6 max-w-3xl">
+                  <div>
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
+                        data-i18n data-en="Turnaround" data-zh="出数时间">Turnaround</dt>
+                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink"
+                        data-i18n data-en="IT pull → live" data-zh="IT 取数 → 实时">IT pull → live</dd>
+                  </div>
+                  <div>
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
+                        data-i18n data-en="Dimensions" data-zh="维度">Dimensions</dt>
+                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink"
+                        data-i18n data-en="Volume · Mix · Top-N" data-zh="成交 · 来源 · Top-N">Volume · Mix · Top-N</dd>
+                  </div>
+                  <div>
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
+                        data-i18n data-en="Refresh" data-zh="更新">Refresh</dt>
+                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink"
+                        data-i18n data-en="Real-time" data-zh="实时">Real-time</dd>
+                  </div>
+                  <div>
+                    <dt class="font-mono text-[10px] uppercase tracking-[0.18em] text-muted"
+                        data-i18n data-en="Stack" data-zh="技术">Stack</dt>
+                    <dd class="font-display tnum text-[18px] md:text-[20px] leading-tight mt-1 text-ink">Tableau Server</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+
+            <!-- Centered screenshot (square, constrained width) -->
+            <figure class="mt-12 max-w-3xl mx-auto">
+              <div class="w-full border border-rule overflow-hidden bg-paper">
+                <img
+                  src="/work/tableau-auction-dashboard.png"
+                  alt="Tableau real-time monitoring dashboard for an auction platform"
+                  width="1200"
+                  height="1200"
+                  loading="lazy"
+                  class="w-full h-auto block"
+                />
+              </div>
+              <figcaption class="mt-3 flex items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
+                <span data-i18n
+                      data-en="Fig. 02 — Real-time monitoring dashboard"
+                      data-zh="图 02 — 实时监控大屏">Fig. 02 — Real-time monitoring dashboard</span>
+                <span data-i18n data-en="Built in Tableau · 2023" data-zh="Tableau 部署 · 2023">Built in Tableau · 2023</span>
+              </figcaption>
+            </figure>
+          </article>
         </div>
       </section>
 
