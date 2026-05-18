@@ -95,13 +95,35 @@ import "../styles/global.css";
 
           <!-- CTAs -->
           <div class="mt-14 md:mt-20 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-            <a href="/Tang_Yang_Data_Analyst.pdf"
-               class="group inline-flex items-center justify-between gap-6 bg-ink text-paper px-6 py-4 hover:bg-accent transition-colors"
-               download>
-              <span class="font-mono text-[12px] uppercase tracking-[0.22em]"
-                    data-i18n data-en="Download résumé" data-zh="下载简历">Download résumé</span>
-              <span class="font-mono text-[14px] transition-transform group-hover:translate-y-0.5">↓</span>
-            </a>
+            <div class="relative" id="resume-dropdown">
+              <button type="button" id="resume-trigger"
+                      class="group inline-flex w-full sm:w-auto items-center justify-between gap-6 bg-ink text-paper px-6 py-4 hover:bg-accent transition-colors"
+                      aria-haspopup="true" aria-expanded="false">
+                <span class="font-mono text-[12px] uppercase tracking-[0.22em]"
+                      data-i18n data-en="Download résumé" data-zh="下载简历">Download résumé</span>
+                <span id="resume-trigger-icon" class="font-mono text-[14px] transition-transform">↓</span>
+              </button>
+              <div id="resume-menu"
+                   class="absolute left-0 right-0 sm:right-auto sm:min-w-full top-full mt-1 bg-paper border border-ink hidden z-20"
+                   role="menu">
+                <a href="/Tang_Yang_Data_Analyst_EN.pdf"
+                   class="flex items-center justify-between gap-6 px-6 py-3 font-mono text-[12px] uppercase tracking-[0.22em] text-ink hover:bg-ink hover:text-paper transition-colors"
+                   role="menuitem"
+                   data-i18n data-en="English (PDF)" data-zh="英文版 (PDF)"
+                   download>
+                  <span>English (PDF)</span>
+                  <span class="text-[14px]">↓</span>
+                </a>
+                <a href="/Tang_Yang_Data_Analyst.pdf"
+                   class="flex items-center justify-between gap-6 px-6 py-3 font-mono text-[12px] uppercase tracking-[0.22em] text-ink hover:bg-ink hover:text-paper transition-colors border-t border-rule"
+                   role="menuitem"
+                   data-i18n data-en="中文版 (PDF)" data-zh="中文版 (PDF)"
+                   download>
+                  <span>中文版 (PDF)</span>
+                  <span class="text-[14px]">↓</span>
+                </a>
+              </div>
+            </div>
             <a href="#contact"
                class="group inline-flex items-center justify-between gap-6 border border-ink/80 px-6 py-4 hover:bg-ink hover:text-paper transition-colors">
               <span class="font-mono text-[12px] uppercase tracking-[0.22em]"
@@ -793,6 +815,32 @@ import "../styles/global.css";
       };
       window.addEventListener("scroll", onScroll, { passive: true });
       onScroll();
+
+      // ---- Résumé download dropdown ----
+      const resumeTrigger = document.getElementById("resume-trigger");
+      const resumeMenu = document.getElementById("resume-menu");
+      const resumeIcon = document.getElementById("resume-trigger-icon");
+      const resumeWrap = document.getElementById("resume-dropdown");
+      const closeResumeMenu = () => {
+        resumeMenu.classList.add("hidden");
+        resumeTrigger.setAttribute("aria-expanded", "false");
+        if (resumeIcon) resumeIcon.style.transform = "";
+      };
+      resumeTrigger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const hidden = resumeMenu.classList.toggle("hidden");
+        resumeTrigger.setAttribute("aria-expanded", String(!hidden));
+        if (resumeIcon) resumeIcon.style.transform = hidden ? "" : "rotate(180deg)";
+      });
+      document.addEventListener("click", (e) => {
+        if (!resumeWrap.contains(e.target)) closeResumeMenu();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeResumeMenu();
+      });
+      resumeMenu.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => closeResumeMenu());
+      });
     </script>
   </body>
 </html>
