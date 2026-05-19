@@ -752,6 +752,13 @@ import "../styles/global.css";
       </div>
     </footer>
 
+    <script>
+      import { inject, track } from "@vercel/analytics";
+      inject();
+      // expose track so the inline script below can call it
+      window.vaTrack = track;
+    </script>
+
     <script is:inline>
       // ---- Lang toggle ----
       const STORE_KEY = "tangyang.lang";
@@ -839,7 +846,14 @@ import "../styles/global.css";
         if (e.key === "Escape") closeResumeMenu();
       });
       resumeMenu.querySelectorAll("a").forEach((a) => {
-        a.addEventListener("click", () => closeResumeMenu());
+        a.addEventListener("click", () => {
+          const href = a.getAttribute("href") || "";
+          const lang = href.includes("_EN") ? "en" : "zh";
+          if (typeof window.vaTrack === "function") {
+            window.vaTrack("resume_download", { lang });
+          }
+          closeResumeMenu();
+        });
       });
     </script>
   </body>
